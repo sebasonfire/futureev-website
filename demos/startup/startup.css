@@ -1,0 +1,220 @@
+/* ===================================
+    Crafto - Startup
+====================================== */
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+/* variable */
+:root {     
+    --base-color: #008836;
+    --alt-font: 'Manrope', sans-serif;
+    --primary-font: 'Rubik', sans-serif;
+    --dark-gray: #06356d;
+    --medium-gray: #868d98;
+} 
+/* reset */
+body {
+    font-size: 17px;
+    line-height: 32px; 
+}
+a {
+    color: #868d98;
+} 
+b, strong {
+    font-weight: 600;
+}
+::-webkit-input-placeholder {
+    color: #868d98 !important;
+    text-overflow: ellipsis;
+}
+::-moz-placeholder {
+    color: #868d98 !important;
+    text-overflow: ellipsis;
+    opacity:1;
+}
+:-ms-input-placeholder {
+    color: #868d98 !important;
+    text-overflow: ellipsis;
+    opacity:1;
+}
+/* bg color */
+.bg-gradient-emerald-blue-emerald-green {
+    background-image:linear-gradient(50deg,#018837 0,#00e25b 100%);
+}
+.bg-gradient-black-green {
+    background-image: linear-gradient(to right top, #1f2021, #1b1d1c, #1b1d1c, #222523, #333c37);
+}
+/* text color */
+.text-gradient-emerald-blue-emerald-green {
+    background-image: linear-gradient(to right top, #018837, #00e25b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* button gradient */
+.btn-gradient-emerald-blue-emerald-green {
+    background-image: linear-gradient(to right, #018837, #018837, #018837);
+    background-size: 200% auto;
+    color: var(--white);
+}
+/* btn */
+.btn{
+    font-weight: 500;
+    text-transform: inherit;
+}
+.btn.btn-extra-large {
+    font-size: 22px;
+}
+.btn.btn-large {
+    font-size:17px;
+}
+.btn.btn-medium {
+    font-size: 16px;
+}
+.btn.btn-small {
+    font-size: 15px;
+}
+.btn.btn-very-small {
+    font-size: 13px;
+}
+.btn.btn-large .btn-icon i {
+    top: 1px;
+}
+.btn.btn-link {
+    padding: 0 0 2px;
+}
+.btn.btn-link-gradient {
+    padding: 0 0 3px;
+}
+/* header */
+header .navbar-brand img {
+    max-height: 30px;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 17px;
+    letter-spacing: .5px;
+    padding: 10px 22px
+}
+.push-menu .close-menu {
+    right: 30px;
+    top: 30px;
+}
+/* newsletter style  */
+.newsletter-style-02 input {
+    font-size: 14px;
+}
+/* footer */
+footer ul li {
+    margin-bottom: 2px;
+}
+/* media query responsive */
+@media (max-width: 1199px) {
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 17px;
+    }
+}
+/* ===================================
+    Custom Video Banner
+====================================== */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+/* ===================================
+    Custom Solid Header Background
+====================================== */
+nav.navbar.disable-fixed {
+    background-color: #f3f3f3 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Añade un borde sutil */
+}
+/* ===================================
+    Custom Header Text and Icon Colors
+====================================== */
+
+/* Cambia el color del texto de los enlaces del menú */
+nav.navbar .navbar-nav .nav-link {
+    color: #05346d !important;
+}
+/* ===================================
+    Custom CTA Button Color
+====================================== */
+.btn.btn-custom-green {
+    background-image: none; /* Quitamos el gradiente de la plantilla */
+    background-color: #008836;
+    border-color: #008836;
+    color: #ffffff; /* Aseguramos que el texto sea blanco */
+}
+
+/* Efecto hover para el botón (un verde un poco más oscuro) */
+.btn.btn-custom-green:hover {
+    background-color: #006629;
+    border-color: #006629;
+    color: #ffffff;
+}
+/* ===================================
+    Custom Stats Number Color
+====================================== */
+.box-shadow-quadruple-large h2 {
+    color: #018837 !important;
+}
+/* ===================================
+    Custom Service Tag Color
+====================================== */
+.services-box-style-03 .btn-dark-gray {
+    background-color: #018837;
+    border-color: #018837;
+}
+/* ===================================
+    Custom Footer Style (Dark Blue)
+====================================== */
+footer.footer-dark {
+    background-color: #05346d; /* Tu color azul corporativo */
+    border-top: none;
+    margin-top: -1px; 
+}
+
+/* --- Hacemos que el texto del footer sea claro --- */
+
+/* Títulos de las columnas */
+footer.footer-dark span.alt-font {
+    color: #ffffff;
+}
+
+/* Párrafos, enlaces de listas, e información de contacto */
+footer.footer-dark p, 
+footer.footer-dark ul li a,
+footer.footer-dark span, 
+footer.footer-dark a {
+    color: rgba(255, 255, 255, 0.7); /* Un blanco semitransparente para mejor legibilidad */
+}
+
+/* Efecto hover para los enlaces */
+footer.footer-dark a:hover {
+    color: #ffffff; /* Blanco sólido al pasar el ratón */
+}
+
+/* Iconos de redes sociales */
+footer.footer-dark .social-icon-style-02 li a {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+footer.footer-dark .social-icon-style-02 li a:hover {
+    background: #008836; /* Tu verde al pasar el ratón */
+    color: #ffffff;
+}
+
+/* Copyright (aseguramos que sea claro) */
+footer.footer-dark .copyright-text p,
+footer.footer-dark .copyright-text a {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer.footer-dark .copyright-text a:hover {
+    color: #ffffff;
+}
