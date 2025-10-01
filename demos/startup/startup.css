@@ -218,3 +218,64 @@ footer.footer-dark .copyright-text a {
 footer.footer-dark .copyright-text a:hover {
     color: #ffffff;
 }
+/* ===================================
+    Custom Dark Blue Section
+====================================== */
+.bg-custom-dark-blue {
+    background-color: #e6f1ff;
+}
+
+/* --- Cambiamos el color del texto dentro de la sección a blanco --- */
+
+/* Títulos principales (h3) */
+.bg-custom-dark-blue h3 {
+    color: #06356d;
+}
+
+/* Texto de los pasos del proceso */
+.bg-custom-dark-blue .process-step-style-05 .process-content span {
+    color: #06356d; /* Títulos de cada paso */
+}
+.bg-custom-dark-blue .process-step-style-05 .process-content p {
+    color: rgba(0, 0, 0, 0.7); /* Párrafos con un blanco semitransparente */
+}
+
+/* Icono y texto de la tarjeta flotante */
+.bg-custom-dark-blue figcaption .feature-box-icon i,
+.bg-custom-dark-blue figcaption .feature-box-content .alt-font {
+    color: #06356d !important; /* Mantenemos el azul oscuro original para que contraste con el fondo blanco de la tarjeta */
+}
+/* ===================================
+    Custom "Why Choose Us" Section Background
+====================================== */
+section.cover-background[style*="demo-startup-who-we-are-bg.jpg"] {
+    background-color: #e6f1ff !important;
+    background-image: none !important; /* Quitamos la imagen de fondo de la plantilla */
+}
+/* ===================================
+    Custom Contact Section Background
+====================================== */
+.bg-custom-contact {
+    background-color: #e6f1ff;
+}
+/* ===================================
+    Custom Product Swiper Styles
+====================================== */
+.product-swiper {
+    padding: 0 40px; /* Espacio para las flechas */
+}
+
+.product-swiper .swiper-button-prev,
+.product-swiper .swiper-button-next {
+    color: var(--dark-gray);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product-swiper .swiper-button-prev {
+    left: 0;
+}
+
+.product-swiper .swiper-button-next {
+    right: 0;
+}
