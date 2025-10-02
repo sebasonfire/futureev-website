@@ -279,3 +279,23 @@ section.cover-background[style*="demo-startup-who-we-are-bg.jpg"] {
 .product-swiper .swiper-button-next {
     right: 0;
 }
+/* ===================================
+    Custom "What We Offer" Section Styles
+====================================== */
+.bg-offer-section {
+    background-color: #06356d;
+    background-image: none !important; /* Quitamos la imagen de fondo de líneas */
+}
+
+/* Cambiamos el color del título y subtítulo a blanco */
+.bg-offer-section .text-center h3,
+.bg-offer-section .text-center span.alt-font {
+    color: #ffffff;
+}
+
+/* Cambiamos el subrayado verde a un blanco sutil para que combine */
+.bg-offer-section .text-highlight .separator-animation {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
